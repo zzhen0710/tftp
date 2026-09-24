@@ -1,3 +1,5 @@
 build/
+tftp_client
+tftp_server
 *.o
 *.out

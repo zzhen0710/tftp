@@ -17,10 +17,10 @@ cmake --build build
 
 ```bash
 # 服务器：目录 [端口]
-./tftp_server server_files 8964
+./tftp_server server_files 8888
 
 # 客户端：IP 昵称 [端口]  （IP 必传）
-./tftp_client 127.0.0.1 8964
+./tftp_client 127.0.0.1 8888
 ```
 
 可开多个客户端，互相发消息。

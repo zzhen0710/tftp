@@ -1,5 +1,8 @@
-#include <utility.h>
-#include "server.h"
+#include "server.hpp"     
+#include <fcntl.h>         // open(), O_WRONLY, O_CREAT, O_TRUNC
+#include <unistd.h>        // write(), close(), read()
+#include <sys/stat.h>      // open() 的权限参数 0664
+#include <cstring>         // memset(), memcpy(), strlen()
 
 using namespace std;
 

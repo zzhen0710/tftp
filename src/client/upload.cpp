@@ -1,5 +1,8 @@
-#include <utility.h>
-#include "client.h"
+#include "client.hpp"        
+#include <fcntl.h>         // open(), O_RDONLY
+#include <unistd.h>        // read(), close()
+#include <sys/stat.h>      // mode_t（open 的权限参数，可选）
+#include <cstring>         // memset(), memcpy()
 
 using namespace std;
 

@@ -1,8 +1,8 @@
 #ifndef _SERVER_H_
 #define _SERVER_H_
 
-#include <utility.h>
-#include "common.h"  
+#include "common.hpp"  
+#include <string>       // std::string
 
 // 服务器类：监听端口、处理 RRQ（下载）/ WRQ（上传）
 class TftpServer {

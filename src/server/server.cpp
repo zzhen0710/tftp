@@ -1,5 +1,8 @@
-#include <utility.h>
-#include "server.h"
+#include "server.hpp"
+#include <sys/time.h>      // struct timeval
+#include <cstring>         // memset(), memcpy(), strlen()
+#include <unistd.h>        // close(), read(), write()
+#include <arpa/inet.h>     // inet_ntoa(), inet_addr(), inet_pton()
 
 using namespace std;
 

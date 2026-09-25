@@ -1,5 +1,8 @@
-#include <utility.h>
-#include "client.h"
+#include "client.hpp"
+#include <arpa/inet.h>     // inet_addr()
+#include <unistd.h>        // close()
+#include <sys/time.h>      // struct timeval
+#include <cstdlib>         // system()
 
 using namespace std;
 

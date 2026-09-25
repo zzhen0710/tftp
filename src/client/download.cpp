@@ -1,5 +1,7 @@
-#include <utility.h>
-#include "client.h"
+#include "client.hpp"
+#include <fcntl.h>         // open(), O_WRONLY, O_CREAT, O_TRUNC
+#include <unistd.h>        // write(), close()
+#include <cstring>         // memset(), memcpy()
 
 using namespace std;
 

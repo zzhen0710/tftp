@@ -1,7 +1,14 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
-#define TFTP_PORT 8964    // 双方约定端口号
+#include <sys/types.h>      // ssize_t
+#include <netinet/in.h>     // sockaddr_in
+#include <sys/socket.h>     // socklen_t
+#include <iostream>         // std::cerr
+#include <cerrno>           // errno
+#include <cstdio>           // printf
+
+#define TFTP_PORT 8888    // 双方约定端口号
 #define BUF_SIZE  516     // 储存一条TFTP报文的缓冲区大小
 #define DATA_SIZE 512     // DATA 数据段大小
 
@@ -15,7 +22,7 @@
 // 错误日志宏函数，用do-while(0)进行单行包裹，防止if()内文本展开报错
 #define ERR_LOG(msg) do { \
     perror(msg); \
-    cout << __LINE__ << "  " << __func__ << "  " << __FILE__ << endl; \
+    std::cerr << __LINE__ << "  " << __func__ << "  " << __FILE__ << endl; \
 } while(0)
 
 //  调试日志宏（打印通信交互过程）

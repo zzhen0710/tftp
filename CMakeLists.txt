@@ -12,7 +12,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # 客户端可执行文件
 add_executable(tftp_client
-    src/client/main.cpp
+    src/client/client_main.cpp
     src/client/client.cpp
     src/client/upload.cpp
     src/client/download.cpp
@@ -21,7 +21,7 @@ add_executable(tftp_client
 
 # 服务器可执行文件
 add_executable(tftp_server
-    src/server/main.cpp
+    src/server/server_main.cpp
     src/server/server.cpp
     src/server/do_upload.cpp
     src/server/do_download.cpp

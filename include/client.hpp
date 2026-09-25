@@ -1,8 +1,8 @@
 #ifndef _CLIENT_H_
 #define _CLIENT_H_
 
-#include <utility.h>
-#include "common.h"
+#include "common.hpp"
+#include <string>       // std::string
 
 // 客户端类：连接服务器、上传/下载文件
 class TftpClient {

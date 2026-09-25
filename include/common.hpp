@@ -1,5 +1,5 @@
-#ifndef _COMMON_H_
-#define _COMMON_H_
+#ifndef _COMMON_HPP_
+#define _COMMON_HPP_
 
 #include <sys/types.h>      // ssize_t
 #include <netinet/in.h>     // sockaddr_in

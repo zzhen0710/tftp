@@ -1,5 +1,5 @@
-#ifndef _CLIENT_H_
-#define _CLIENT_H_
+#ifndef _CLIENT_HPP_
+#define _CLIENT_HPP_
 
 #include "common.hpp"
 #include <string>       // std::string

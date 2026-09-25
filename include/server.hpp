@@ -1,5 +1,5 @@
-#ifndef _SERVER_H_
-#define _SERVER_H_
+#ifndef _SERVER_HPP_
+#define _SERVER_HPP_
 
 #include "common.hpp"  
 #include <string>       // std::string
